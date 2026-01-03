@@ -1,0 +1,1657 @@
+.completed-order-item {
+    width: 100%;
+    position: relative;
+    padding: 20px 24px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #f6f6f6
+}
+
+.completed-order-item__data {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.completed-order-item__data.isPass .completed-order-item__data__item {
+    flex: 0 0 auto
+}
+
+.completed-order-item__data.isPass .completed-order-item__data__item:nth-child(2) {
+    margin-left: 12px
+}
+
+.completed-order-item__data.isPass .completed-order-item__data__item:last-child {
+    margin-left: auto
+}
+
+.completed-order-item__data__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+.completed-order-item__data__item:first-child {
+    align-items: start;
+    align-self: end
+}
+
+.completed-order-item__data__item:nth-child(4) {
+    align-items: end
+}
+
+.completed-order-item__data__item:nth-child(2),.completed-order-item__data__item:nth-child(3) {
+    align-items: center
+}
+
+.completed-order-item .completed-order__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.completed-order-item .completed-order__text-block.max {
+    flex: 1
+}
+
+.completed-order-item .completed-order__text-block.max .completed-order__text-block__description,.completed-order-item .completed-order__text-block.max .completed-order__text-block__title {
+    height: auto;
+    display: -webkit-box;
+    margin-bottom: 4px;
+    text-align: start
+}
+
+.completed-order-item .completed-order__text-block__copy {
+    padding: 2px 5px;
+    background: #2a9b4b;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 4px
+}
+
+.completed-order-item .completed-order__text-block__description,.completed-order-item .completed-order__text-block__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.completed-order-item .completed-order__text-block__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    font-weight: 600;
+    font-size: 14px
+}
+
+.completed-order-item .completed-order__text-block__title .promo {
+    margin-left: 4px;
+    color: #2a9b4b
+}
+
+.completed-order-item .completed-order__text-block__title svg {
+    width: 20px!important;
+    height: 20px!important;
+    margin-left: 4px;
+    pointer-events: all;
+    cursor: pointer;
+    fill: #0f120e
+}
+
+.completed-order-item .completed-order__text-block__description {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: .4
+}
+
+.completed-order-item__robux {
+    fill: #2abe55
+}
+
+.completed-order-item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px
+}
+
+.completed-order-item__footer {
+    display: flex;
+    gap: 12px;
+    width: 100%
+}
+
+.completed-order-item__footer .phone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 42px;
+    border-radius: 8px;
+    background: #f1f1f1;
+    border: 2px solid #ececec;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02);
+    opacity: .8;
+    transition: opacity .2s;
+    cursor: pointer
+}
+
+.completed-order-item__footer .phone-icon:hover {
+    opacity: 1
+}
+
+.completed-order-item__footer .phone-icon svg {
+    fill: #0f120e
+}
+
+.completed-order-item__status {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 4px;
+    height: 42px;
+    padding: 0 12px 0 16px;
+    border-radius: 8px;
+    background: #e3f3e7;
+    border: 2px solid rgba(217,239,223,.5);
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02)
+}
+
+.completed-order-item__status.cancel,.completed-order-item__status.error,.completed-order-item__status.failed,.completed-order-item__status.system_error {
+    border-color: hsla(0,66%,87%,.5);
+    background: #f6d4d4
+}
+
+.completed-order-item__status.cancel svg,.completed-order-item__status.error svg,.completed-order-item__status.failed svg,.completed-order-item__status.system_error svg {
+    fill: #d22727
+}
+
+.completed-order-item__status.cancel span,.completed-order-item__status.error span,.completed-order-item__status.failed span,.completed-order-item__status.system_error span {
+    color: #d22727
+}
+
+.completed-order-item__status .icon {
+    width: 20px;
+    min-width: 20px;
+    height: 20px
+}
+
+.completed-order-item__status svg {
+    fill: #2ac055
+}
+
+.completed-order-item__status span {
+    color: #2ac055;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.completed-order-item__status__text {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: start
+}
+
+.completed-order-item__status__gift-badge {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 10px;
+    background-color: #2abe55;
+    border-radius: 76px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-align: center
+}
+
+.completed-order-item__status__time {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: .5;
+    white-space: nowrap
+}
+
+.completed-order-item__hint {
+    position: absolute;
+    font-size: 14px;
+    width: 150px;
+    top: 15px;
+    left: 90px;
+    background: #fff;
+    box-shadow: 0 2px 20px 0 #c8c8c8;
+    border-radius: 6px;
+    padding: 6px;
+    z-index: 1
+}
+
+.completed-order-item__message {
+    margin-top: 6px;
+    height: 42px
+}
+
+.completed-order-item__message .icon {
+    width: 20px;
+    height: 20px
+}
+
+@media screen and (max-width: 1919px) {
+    .completed-order-item .completed-order__text-block__title {
+        font-size:12px
+    }
+
+    .completed-order-item .completed-order__text-block__description {
+        font-size: 10px
+    }
+
+    .completed-order-item__status {
+        padding: 0 12px
+    }
+
+    .completed-order-item__status__text {
+        font-size: 12px
+    }
+
+    .completed-order-item__status__time {
+        font-size: 10px
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .completed-order-item .completed-order__text-block__title {
+        font-size:10px
+    }
+
+    .completed-order-item .completed-order__text-block__description {
+        font-size: 8px
+    }
+
+    .completed-order-item__status__gift-badge,.completed-order-item__status__text {
+        font-size: 10px
+    }
+
+    .completed-order-item__status__time {
+        font-size: 8px
+    }
+}
+
+.completed-orders {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    min-width: 540px;
+    max-width: 540px;
+    flex-grow: 1;
+    padding-bottom: 16px;
+    border-radius: 12px;
+    background: #fbfbfb
+}
+
+.completed-orders__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 12px;
+    flex-shrink: 0;
+    width: 100%;
+    padding-left: 12px;
+    line-height: 21px
+}
+
+.completed-orders__header__title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #0f120e
+}
+
+.completed-orders__header__description {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6f716e
+}
+
+.completed-orders__content {
+    padding: 0 12px;
+    flex-grow: 1;
+    overflow-y: auto
+}
+
+.completed-orders__content,.completed-orders__content__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.completed-orders__content__empty {
+    height: 100%;
+    gap: 16px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #f6f6f6;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02)
+}
+
+.completed-orders__content__empty img {
+    width: 140px
+}
+
+.completed-orders__content__empty__text {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(15,18,14,.6)
+}
+
+.completed-orders__content__empty__button {
+    width: 260px
+}
+
+.completed-orders__content__empty__button span {
+    margin-top: 3px
+}
+
+.completed-orders__content__orders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%
+}
+
+@media screen and (max-width: 1919px) {
+    .completed-orders {
+        min-width:420px;
+        max-width: 420px
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .completed-orders {
+        width:unset;
+        max-width: 370px
+    }
+
+    .completed-orders__header__title {
+        font-size: 14px
+    }
+
+    .completed-orders__header__description {
+        font-size: 12px
+    }
+}
+
+.uncompleted-orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 12px;
+    background: #fbfbfb;
+    overflow-y: auto
+}
+
+.uncompleted-orders__line {
+    flex-shrink: 0;
+    width: 95%;
+    height: 1px;
+    background: #efefef
+}
+
+.uncompleted-orders__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    gap: 16px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #f6f6f6;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02)
+}
+
+.uncompleted-orders__empty.full {
+    flex: 1
+}
+
+.uncompleted-orders__empty img {
+    width: 140px
+}
+
+.uncompleted-orders__empty__text {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(15,18,14,.6)
+}
+
+.uncompleted-orders__empty__button {
+    width: 260px
+}
+
+.uncompleted-orders__empty__button span {
+    margin-top: 3px
+}
+
+.uncompleted-order-item {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #f6f6f6;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02)
+}
+
+.uncompleted-order-item__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 138px;
+    height: 138px;
+    margin-right: 28px;
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden
+}
+
+.uncompleted-order-item__image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.uncompleted-order-item__image img.top {
+    -o-object-position: top;
+    object-position: top
+}
+
+.uncompleted-order-item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    flex-grow: 1
+}
+
+.uncompleted-order-item .uncompleted-order-data {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 4px
+}
+
+.uncompleted-order-item .uncompleted-order-data.isGames,.uncompleted-order-item .uncompleted-order-data.isPass {
+    gap: 12px
+}
+
+.uncompleted-order-item .uncompleted-order-data.isGames .uncompleted-order-data__item__title,.uncompleted-order-item .uncompleted-order-data.isPass .uncompleted-order-data__item__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.uncompleted-order-item .uncompleted-order-data.isPass {
+    grid-template-columns: .5fr 1fr 2fr 2fr 1fr
+}
+
+.uncompleted-order-item .uncompleted-order-data.isGames {
+    grid-template-columns: .5fr 2fr 1fr 1fr 1fr
+}
+
+.uncompleted-order-item .uncompleted-order-data__message {
+    margin: 10px 0
+}
+
+.uncompleted-order-item .uncompleted-order-data__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.uncompleted-order-item .uncompleted-order-data__item:last-of-type {
+    align-items: flex-end
+}
+
+.uncompleted-order-item .uncompleted-order-data__item span {
+    line-height: 20px;
+    text-align: start
+}
+
+.uncompleted-order-item .uncompleted-order-data__item__copy {
+    padding: 3px 5px;
+    background: #2a9b4b;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 4px;
+    white-space: nowrap
+}
+
+.uncompleted-order-item .uncompleted-order-data__item__title {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    font-weight: 600;
+    font-size: 14px
+}
+
+.uncompleted-order-item .uncompleted-order-data__item__title svg {
+    width: 20px!important;
+    height: 20px!important;
+    margin-left: 4px;
+    pointer-events: all;
+    cursor: pointer;
+    fill: #0f120e
+}
+
+.uncompleted-order-item .uncompleted-order-data__item__title .promo {
+    margin-left: 4px;
+    color: #2a9b4b
+}
+
+.uncompleted-order-item .uncompleted-order-data__item__description {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: .4
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking {
+    display: flex;
+    gap: 12px
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100px;
+    height: 48px;
+    margin-right: 4px;
+    border-radius: 8px;
+    background: #2a9b4b;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02)
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__time.warning {
+    background: #f08200
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__time span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__btn {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 48px;
+    padding: 0 20px;
+    border-radius: 8px;
+    background: #dfeefc;
+    border: 2px solid rgba(217,228,239,.5);
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02);
+    cursor: pointer
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__btn a {
+    outline: none;
+    color: inherit;
+    text-decoration: none
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__btn span {
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 14px;
+    color: #31b6d3;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.uncompleted-order-item .uncompleted-order-data__tracking__btn svg {
+    fill: #31b6d3
+}
+
+.uncompleted-order-item .uncompleted-order-data__pass-btn {
+    max-width: 290px;
+    white-space: nowrap;
+    height: auto
+}
+
+.uncompleted-order-item .uncompleted-order-data__pass-btn.error {
+    background-color: #d22727
+}
+
+.uncompleted-order-item .uncompleted-order-data__pass-btn.warning {
+    background-color: #f2a500
+}
+
+@media screen and (max-width: 1919px) {
+    .uncompleted-order-item__image {
+        width:112px;
+        height: 112px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__tracking__btn span {
+        font-size: 12px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__tracking__time {
+        width: 80px;
+        height: 42px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__tracking__time span {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .uncompleted-order-item__image {
+        width:96px;
+        height: 96px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__item__title {
+        font-size: 12px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__item__description,.uncompleted-order-item .uncompleted-order-data__tracking__btn span {
+        font-size: 10px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__tracking__time {
+        width: 74px
+    }
+
+    .uncompleted-order-item .uncompleted-order-data__tracking__time span {
+        font-size: 10px
+    }
+}
+
+.tabs-block {
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+.tabs-block,.tabs-block__item {
+    display: flex;
+    border-radius: 8px;
+    background: #fafafa
+}
+
+.tabs-block__item {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 48px;
+    padding: 0 20px;
+    border: 2px solid #fafafa;
+    cursor: pointer;
+    transition: all .2s
+}
+
+.tabs-block__item.active {
+    background: #fff!important;
+    border-color: #f6f6f6!important
+}
+
+.tabs-block__item.active span {
+    opacity: 1!important
+}
+
+.tabs-block__item:hover {
+    background: #f6f6f6;
+    border-color: #f6f6f6
+}
+
+.tabs-block__item:hover span {
+    opacity: .8
+}
+
+.tabs-block__item span {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #0f120e;
+    opacity: .6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transition: all .2s
+}
+
+@media screen and (max-width: 1439px) {
+    .tabs-block__item span {
+        font-size:12px
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .tabs-block__item {
+        height:36px;
+        padding: 0 10px;
+        border-width: 1px
+    }
+
+    .tabs-block__item span {
+        font-size: 12px
+    }
+}
+
+.empty-list-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.empty-list-info img {
+    width: 139px;
+    height: 128px
+}
+
+.empty-list-info__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 330px
+}
+
+.empty-list-info__body.small {
+    max-width: 294px
+}
+
+.empty-list-info__text {
+    line-height: 150%;
+    color: rgba(15,18,14,.6)
+}
+
+.empty-list-info a,.empty-list-info__text {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center
+}
+
+.empty-list-info a {
+    line-height: 21px;
+    color: #2a9b4b
+}
+
+.mobile-order-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #f6f6f6;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.031)
+}
+
+.mobile-order-item .uncompleted-order-data__pass-btn.error,.mobile-order-item .uncompleted-order-data__pass-btn.system_error {
+    background-color: #d22727
+}
+
+.mobile-order-item .uncompleted-order-data__pass-btn.warning {
+    background-color: #f2a500
+}
+
+.mobile-order-item.error .mobile-order-item__footer,.mobile-order-item.system_error .mobile-order-item__footer {
+    flex-direction: column;
+    gap: 4px
+}
+
+.mobile-order-item__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.mobile-order-item__header {
+    display: flex;
+    width: 100%
+}
+
+.mobile-order-item__header.pass {
+    justify-content: space-between
+}
+
+.mobile-order-item__header__info {
+    display: flex;
+    gap: 10px
+}
+
+.mobile-order-item__header__column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%
+}
+
+.mobile-order-item__header__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    color: #0f120e
+}
+
+.mobile-order-item__header__item.w-50 {
+    width: 51px
+}
+
+.mobile-order-item__header__item.min-w-50 {
+    min-width: 51px
+}
+
+.mobile-order-item__header__item__title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px
+}
+
+.mobile-order-item__header__item__title .promo {
+    margin-left: 4px;
+    color: #2a9b4b
+}
+
+.mobile-order-item__header__item__description {
+    font-weight: 400;
+    font-size: 10px;
+    opacity: .4
+}
+
+.mobile-order-item__header__item__icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    cursor: pointer;
+    fill: rgba(15,18,14,.8)
+}
+
+.mobile-order-item__header__item__icon-robux {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    fill: #2abe55
+}
+
+.mobile-order-item__header__item__copy {
+    padding: 2px 5px;
+    background: #2a9b4b;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 4px;
+    margin-bottom: 0
+}
+
+.mobile-order-item__line {
+    width: 100%;
+    height: 1px;
+    background: #f4f4f4
+}
+
+.mobile-order-item__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.mobile-order-item__message {
+    height: 32px;
+    padding: 0 12px
+}
+
+.mobile-order-item__message .icon {
+    width: 18px;
+    height: 18px
+}
+
+.mobile-order-item__status-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02);
+    background-color: #e3f3e7;
+    color: #2ac055
+}
+
+.mobile-order-item__status-block__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    fill: #2ac055
+}
+
+.mobile-order-item__status-block__status-text {
+    font-weight: 500;
+    font-size: 12px
+}
+
+.mobile-order-item__status-block__time {
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 10px
+}
+
+.mobile-order-item__status-block.success {
+    background: #e3f3e7;
+    border: 1px solid rgba(217,239,223,.5)
+}
+
+.mobile-order-item__status-block.success .mobile-order-item__status-block__icon {
+    fill: #2ac055
+}
+
+.mobile-order-item__status-block.success .mobile-order-item__status-block__status-text {
+    color: #2ac055
+}
+
+.mobile-order-item__status-block.success .mobile-order-item__status-block__time {
+    color: #2ac055;
+    opacity: .5
+}
+
+.mobile-order-item__status-block.cancel,.mobile-order-item__status-block.error,.mobile-order-item__status-block.failed,.mobile-order-item__status-block.system_error {
+    background: #f6d4d4;
+    border: 1px solid hsla(0,66%,87%,.502)
+}
+
+.mobile-order-item__status-block.cancel .mobile-order-item__status-block__icon,.mobile-order-item__status-block.error .mobile-order-item__status-block__icon,.mobile-order-item__status-block.failed .mobile-order-item__status-block__icon,.mobile-order-item__status-block.system_error .mobile-order-item__status-block__icon {
+    fill: #d22727
+}
+
+.mobile-order-item__status-block.cancel .mobile-order-item__status-block__status-text,.mobile-order-item__status-block.error .mobile-order-item__status-block__status-text,.mobile-order-item__status-block.failed .mobile-order-item__status-block__status-text,.mobile-order-item__status-block.system_error .mobile-order-item__status-block__status-text {
+    color: #d22727
+}
+
+.mobile-order-item__status-block.cancel .mobile-order-item__status-block__time,.mobile-order-item__status-block.error .mobile-order-item__status-block__time,.mobile-order-item__status-block.failed .mobile-order-item__status-block__time,.mobile-order-item__status-block.system_error .mobile-order-item__status-block__time {
+    color: #d22727;
+    opacity: .5
+}
+
+.mobile-order-item__support {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: #f1f1f1;
+    border: 1px solid #ececec;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02);
+    cursor: pointer
+}
+
+.mobile-order-item__support__icon {
+    width: 18px;
+    height: 18px;
+    fill: rgba(15,18,14,.8)
+}
+
+.mobile-order-item__support span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #0f120e;
+    opacity: .8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.mobile-order-item__pending-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    cursor: pointer
+}
+
+.mobile-order-item__pending-block .button {
+    height: 32px
+}
+
+.mobile-order-item__pending-block.center {
+    justify-content: center
+}
+
+.mobile-order-item__pending-block__link,.mobile-order-item__pending-block__time {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02);
+    font-weight: 500;
+    font-size: 12px
+}
+
+.mobile-order-item__pending-block__link__icon,.mobile-order-item__pending-block__time__icon {
+    width: 18px;
+    height: 18px
+}
+
+.mobile-order-item__pending-block__link span,.mobile-order-item__pending-block__time span {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.mobile-order-item__pending-block__time {
+    flex-shrink: 0;
+    gap: 4px;
+    background: #2a9b4b
+}
+
+.mobile-order-item__pending-block__time span {
+    color: #fff
+}
+
+.mobile-order-item__pending-block__link {
+    flex-grow: 1;
+    background: #dfeefc;
+    border: 1px solid rgba(211,222,233,.5)
+}
+
+.mobile-order-item__pending-block__link span {
+    margin-right: auto;
+    color: #31b6d3
+}
+
+.mobile-order-item__pending-block__link__icon {
+    fill: #31b6d3
+}
+
+.back-button-wrapper {
+    margin-top: auto;
+    display: flex;
+    gap: 12px
+}
+
+.back-button-wrapper .back.button {
+    min-width: 60px;
+    width: 60px
+}
+
+@media screen and (max-width: 743px) {
+    .back-button-wrapper {
+        gap:8px
+    }
+
+    .back-button-wrapper .button {
+        max-height: 46px
+    }
+
+    .back-button-wrapper .back.button {
+        min-width: 46px;
+        width: 46px
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .back-button-wrapper {
+        gap:8px
+    }
+
+    .back-button-wrapper .button {
+        max-height: 38px
+    }
+
+    .back-button-wrapper .back.button {
+        width: 38px
+    }
+}
+
+.mobile-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.04);
+    overflow-y: auto
+}
+
+.mobile-orders__header {
+    flex-shrink: 0
+}
+
+.mobile-orders__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none
+}
+
+.mobile-orders__content::-webkit-scrollbar {
+    display: none
+}
+
+.mobile-orders__empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+
+.mobile-orders__empty .empty-list-info__text {
+    font-size: 12px
+}
+
+.mobile-orders__empty .button {
+    width: 300px
+}
+
+.mobile-orders__footer .button {
+    margin: 0 auto;
+    max-width: 680px
+}
+
+@media screen and (max-width: 1023px) {
+    .mobile-orders__footer {
+        display:none
+    }
+}
+
+.gamepass-steps {
+    padding: 0 12px;
+    flex: 1
+}
+
+.gamepass-steps.is-card {
+    min-height: 1px;
+    display: flex;
+    gap: 24px
+}
+
+.gamepass-steps.is-card .gamepass-step:nth-child(2) .gamepass-step__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px
+}
+
+.gamepass-steps.is-card .gamepass-step:nth-child(2) .gamepass-step__header .button {
+    margin: 10px auto;
+    grid-column: 1/-1
+}
+
+.gamepass-steps.p-0 {
+    padding: 0
+}
+
+.gamepass-steps .gamepass-step,.gamepass-steps__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.gamepass-steps .gamepass-step__header {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.gamepass-steps .gamepass-step__header.align-start {
+    align-items: flex-start
+}
+
+.gamepass-steps .gamepass-step__number {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #2a9b4b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.gamepass-steps .gamepass-step__title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6f716e;
+    line-height: 1.4;
+    text-align: start
+}
+
+.gamepass-steps .gamepass-step__amount {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer
+}
+
+.gamepass-steps .gamepass-step__amount span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2a9b4b
+}
+
+.gamepass-steps .gamepass-step__amount .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: .6;
+    fill: rgba(15,18,14,.6)
+}
+
+.gamepass-steps .gamepass-step .button {
+    max-width: 303px
+}
+
+.gamepass-steps .gamepass-step .button .icon {
+    fill: #fff;
+    color: #fff
+}
+
+@media screen and (max-width: 1919px) {
+    .gamepass-steps {
+        display:flex
+    }
+
+    .gamepass-steps__body {
+        flex: 1
+    }
+
+    .gamepass-steps .gamepass-step,.gamepass-steps__body {
+        display: flex;
+        flex-direction: column;
+        gap: 18px
+    }
+
+    .gamepass-steps .gamepass-step__title {
+        font-size: 16px
+    }
+
+    .gamepass-steps .gamepass-step,.gamepass-steps__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px
+    }
+
+    .gamepass-steps .gamepass-step__title {
+        font-size: 15px
+    }
+
+    .gamepass-steps.is-card {
+        gap: 12px
+    }
+
+    .gamepass-steps.is-card .gamepass-steps__body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px
+    }
+
+    .gamepass-steps .gamepass-step,.gamepass-steps__body {
+        display: flex;
+        flex-direction: column;
+        gap: 16px
+    }
+
+    .gamepass-steps .gamepass-step__title {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .gamepass-steps {
+        padding:0
+    }
+
+    .gamepass-steps .gamepass-step:nth-child(2) .gamepass-step__header {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 8px
+    }
+
+    .gamepass-steps .gamepass-step:nth-child(2) .gamepass-step__header .button {
+        max-width: 100%;
+        margin: 10px auto;
+        grid-column: 1/-1
+    }
+
+    .gamepass-steps .gamepass-step__header {
+        gap: 8px
+    }
+
+    .gamepass-steps .gamepass-step__number {
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px
+    }
+
+    .gamepass-steps .gamepass-step__title {
+        font-size: 12px;
+        line-height: 1.2
+    }
+
+    .gamepass-steps .gamepass-step__amount span {
+        font-size: 16px
+    }
+
+    .gamepass-steps .gamepass-step__amount .icon {
+        width: 16px;
+        height: 16px
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .gamepass-steps .gamepass-step,.gamepass-steps__body {
+        display:flex;
+        flex-direction: column;
+        gap: 12px
+    }
+
+    .gamepass-steps .gamepass-step__title {
+        font-size: 11px
+    }
+}
+
+.gamepass-block-wrapper[data-v-796f7aa0] {
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px
+}
+
+.gamepass-block-wrapper.is-card[data-v-796f7aa0] {
+    padding: 16px
+}
+
+.gamepass-block-wrapper.is-card .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+    height: 100%
+}
+
+.gamepass-block-wrapper.is-card .gamepass-block-wrapper__video .total-robux[data-v-796f7aa0] {
+    font-size: 15px
+}
+
+.gamepass-block-wrapper.is-modal .gamepass-block-wrapper__video img[data-v-796f7aa0] {
+    width: 100%;
+    height: auto;
+    max-height: 100%
+}
+
+.gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+    max-width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    border: 2px solid rgba(15,18,14,.2);
+    padding: 16px
+}
+
+.gamepass-block-wrapper__instructions.hide[data-v-796f7aa0] {
+    opacity: 0
+}
+
+.gamepass-block-wrapper__title[data-v-796f7aa0] {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgba(15,18,14,.8);
+    margin-bottom: 10px
+}
+
+.gamepass-block-wrapper__title span[data-v-796f7aa0] {
+    color: #2a9b4b
+}
+
+.gamepass-block-wrapper__video[data-v-796f7aa0] {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    z-index: 1
+}
+
+.gamepass-block-wrapper__video .total-robux[data-v-796f7aa0] {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    opacity: .8;
+    z-index: -1;
+    font-size: clamp(11px,11px + 0.0173076923*(100vh - 680px),20px)
+}
+
+.gamepass-block-wrapper__video img[data-v-796f7aa0] {
+    height: 100%
+}
+
+.gamepass-block-wrapper__support[data-v-796f7aa0] {
+    max-width: 260px
+}
+
+.gamepass-block[data-v-796f7aa0] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.02)
+}
+
+.gamepass-block__content[data-v-796f7aa0] {
+    display: flex;
+    gap: 20px;
+    width: 100%
+}
+
+.gamepass-block__content__image[data-v-796f7aa0] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 212px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff
+}
+
+.gamepass-block__content__text[data-v-796f7aa0] {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6f716e;
+    overflow-y: auto
+}
+
+.gamepass-block__footer[data-v-796f7aa0] {
+    display: flex;
+    gap: 16px
+}
+
+.gamepass-block__footer .button[data-v-796f7aa0] {
+    width: 280px;
+    max-width: 100%
+}
+
+@media screen and (max-width: 1919px) {
+    .gamepass-block-wrapper.is-card .gamepass-block-wrapper__video .total-robux[data-v-796f7aa0] {
+        font-size:12px
+    }
+
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        height: 35vh
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .gamepass-block-wrapper.is-card .gamepass-block-wrapper__video .total-robux[data-v-796f7aa0] {
+        font-size:10px
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .gamepass-block-wrapper[data-v-796f7aa0] {
+        display:flex;
+        flex-direction: column;
+        gap: 14px;
+        height: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        background: #fff;
+        position: relative
+    }
+
+    .gamepass-block-wrapper.is-modal .gamepass-block-wrapper__video img[data-v-796f7aa0] {
+        width: auto;
+        max-width: 100%;
+        height: 80%
+    }
+
+    .gamepass-block-wrapper__title[data-v-796f7aa0] {
+        font-size: 11px;
+        margin-bottom: 4px
+    }
+
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 8px
+    }
+
+    .gamepass-block-wrapper__video .total-robux[data-v-796f7aa0] {
+        top: 37%;
+        left: 9%;
+        font-size: 12px;
+        font-size: clamp(8px,8px + 0.0307692308*(100vh - 680px),24px)
+    }
+
+    .gamepass-block[data-v-796f7aa0] {
+        margin-top: auto;
+        width: 100%
+    }
+
+    .gamepass-block__content__text[data-v-796f7aa0] {
+        padding: 8px;
+        border-radius: 6px;
+        background: #fbfbfb;
+        font-size: 12px
+    }
+
+    .gamepass-block__footer[data-v-796f7aa0] {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .gamepass-block__footer .button[data-v-796f7aa0] {
+        width: 100%;
+        max-width: unset
+    }
+}
+
+@media screen and (max-width: 743px) {
+    .gamepass-block-wrapper__video[data-v-796f7aa0] {
+        display:flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .gamepass-block-wrapper__video img[data-v-796f7aa0] {
+        width: 100%;
+        height: auto;
+        max-height: 100%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        height:30vh
+    }
+
+    .gamepass-block-wrapper__video .total-robux[data-v-796f7aa0] {
+        font-size: 8px
+    }
+}
+
+@media screen and (max-width: 1023px)and (max-height:950px) {
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        height:45dvh
+    }
+}
+
+@media screen and (max-width: 1023px)and (max-height:840px) {
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        height:40dvh
+    }
+}
+
+@media screen and (max-width: 1023px)and (max-height:770px) {
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        height:35dvh
+    }
+}
+
+@media screen and (max-width: 1023px)and (max-height:650px) {
+    .gamepass-block-wrapper__instructions[data-v-796f7aa0] {
+        height:30dvh
+    }
+}
